@@ -13,7 +13,7 @@ const ProductPage = () => {
   const [showAnalysis, setShowAnalysis] = useState(false);
 
   return (
-    <>
+    <div className="product-page">
       <HeaderBanner />
       <Header />
 
@@ -39,7 +39,7 @@ const ProductPage = () => {
       )}
       <ReviewVariants />
       <Footer />
-    </>
+    </div>
   );
 };
 

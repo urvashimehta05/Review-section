@@ -50,7 +50,7 @@
   .product-desc-section {
     flex-direction: column-reverse;
     gap: 32px;
-    margin: 48px 0;
+    margin: 48px 20px;
     padding: 32px;
   }
 

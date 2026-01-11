@@ -47,7 +47,9 @@ html {
   .reveal + .reveal {
     margin-top: 48px;
   }
-
+.product-page{
+    margin: 20px !important;
+}
   .analysis-trigger {
     margin: 32px auto 48px;
   }
