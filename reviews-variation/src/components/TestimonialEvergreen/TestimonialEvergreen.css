@@ -1,0 +1,80 @@
+.evergreen-section {
+  margin: 120px 0;
+  overflow: hidden;
+}
+.evergreen-marquee {
+  width: 100%;
+  overflow: hidden;
+}
+.evergreen-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+
+  animation: scrollLinear 35s linear infinite;
+  will-change: transform;
+}
+.evergreen-card {
+  width: 320px;
+  padding: 26px 22px;
+  border-radius: 20px;
+
+  background: linear-gradient(
+    105deg,
+    rgba(255, 107, 71, 0.95),
+    rgba(242, 183, 5, 0.45)
+  );
+
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+.evergreen-card:hover {
+  background: #ffffff;
+  color: #111827;
+  border: 5px solid #FF6B47;
+  backdrop-filter: none;
+  transform: scale(1.05);
+}
+.evergreen-text {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.evergreen-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 8px;
+}
+
+.evergreen-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.evergreen-profession {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.evergreen-date {
+  font-size: 12px;
+  opacity: 0.85;
+}
+@keyframes scrollLinear {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 768px) {
+  .evergreen-card {
+    width: 280px;
+  }
+}

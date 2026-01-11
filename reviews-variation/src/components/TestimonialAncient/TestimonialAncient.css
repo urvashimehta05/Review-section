@@ -1,0 +1,131 @@
+.ancient-section {
+  max-width: 900px;
+  margin: 120px auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.ancient-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #1f2937;
+}
+
+.ancient-summary {
+  margin-bottom: 56px;
+}
+
+.ancient-stars {
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #F2B705;
+  margin-bottom: 8px;
+}
+
+.ancient-rating {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.ancient-trust {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.ancient-reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.ancient-review {
+  padding-bottom: 36px;
+  border-bottom: 3px solid #FF6B47 !important;
+  border-left: 6px solid #FF6B47 !important;
+  padding: 7px;
+  padding-top: 20px;
+}
+.ancient-review:hover{
+  color: #ffffff;
+  box-shadow: 0 12px 50px rgba(255, 107, 71, 0.55);
+}
+.ancient-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 18px;
+}
+
+.ancient-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ancient-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.ancient-rating-small {
+  font-size: 14px;
+  color: #F2B705;
+  letter-spacing: 2px;
+}
+.ancient-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ancient-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.ancient-review {
+  padding-bottom: 36px;
+  border-bottom: 1px solid #e5e7eb;
+
+  opacity: 0;
+  transform: translateY(16px);
+
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ancient-reveal.active .ancient-review {
+  opacity: 1;
+  transform: translateY(0);
+}
+.ancient-reveal.active .ancient-review:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.ancient-reveal.active .ancient-review:nth-child(2) {
+  transition-delay: 0.6s;
+}
+
+.ancient-reveal.active .ancient-review:nth-child(3) {
+  transition-delay: 1s;
+}
+
+
+@media (max-width: 768px) {
+  .ancient-section {
+    margin: 80px auto;
+  }
+
+  .ancient-title {
+    font-size: 26px;
+  }
+
+  .ancient-footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,82 @@
+.review-variants-section {
+  margin: 120px 0;
+}
+
+.variant-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 56px;
+}
+
+/* Base button */
+.variant-btn {
+  padding: 10px 22px;
+  border-radius: 9999px;
+
+  background: transparent;
+  border: 1.5px solid #e5e7eb;
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+/* Hover */
+.variant-btn:hover {
+  background: rgba(255, 107, 71, 0.15);
+  color: #FF6B47;
+  border-color: #FF6B47;
+}
+
+/* Active */
+.variant-btn.active {
+  background: #FF6B47;
+  color: #ffffff;
+  border-color: #FF6B47;
+}
+
+.variant-btn.active:hover {
+  background: #FF6B47;
+  color: #ffffff;
+}
+
+/* Content area */
+.variant-content {
+  margin-top: 40px;
+}
+
+/* Placeholder for other variants */
+.variant-placeholder {
+  text-align: center;
+  font-size: 16px;
+  color: #6b7280;
+}
+.evergreen-heading {
+  text-align: center;
+  margin-bottom: 48px;
+
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  color: #FF6B47;
+
+  font-family: "Pacifico", cursive;
+  transition: font-family 0.25s ease, letter-spacing 0.25s ease;
+}
+
+.evergreen-heading span {
+  display: block;
+  font-size: 18px;
+  margin-top: 16px;
+  box-shadow: 5px solid rgba(255, 107, 71, 0.8);;
+  padding-top: 20px;
+}
+.evergreen-heading:hover,
+.evergreen-heading:active {
+  letter-spacing: 0.2px;
+}
